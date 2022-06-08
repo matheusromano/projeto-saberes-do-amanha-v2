@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" author="mbairo"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" text="" type="text/css" href="../css/bootstrap.min.css"> <!-- <<< Retirar ?--> 
+  <link rel="stylesheet" href="../css/style.css"><!-- Meu css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Link do bootstrap:  https://stackblitz.com/run?file=index.html -->
+  <title>Frequência e Boletins</title>
+</head>
+<body>
+  <!-- Início Logo/Título -->
+  <div class="jumbotron py-0 my-0 rounded-0" style="background-color: rgb(16, 119, 137);">
+    <div class="container container-fluid d-flex justify-content-center">
+      <nav class="navbar" style="background-color: rgb(16, 119, 137);">
+        <!-- <div class="container-fluid d-flex justify-content-center"> -->
+            <a class="navbar-brand mr-5" href="#"><img height="110" src="../img/logo.png" alt="Logo"></a>
+            <span class="navbar-brand ml-5" id="color-white-h1"><h1>Disciplinas</h1></span>           
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Fim Logo/Título -->
+
+  <!-- Início Menu -->
+  <div class="jumbotron py-0 my-0 rounded-0" style="background-color: rgb(47, 136, 151);"> <!-- Inicio Jumbotron Menu -->   
+    <div class="container container-fluid d-flex justify-content-center"> <!-- Inicio Container Menu -->
+      <nav class="navbar navbar-expand-lg" style="background-color: rgb(47, 136, 151);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="agenda.html">Agenda</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="disciplinas.html">Disciplinas</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="financeiro.html">Financeiro</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" aria-current="page" href="frequencia-e-boletins.html">Frequência e Boletins</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="comunicados.html">Comunidados</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="fale-conosco.html">Fale Conosco</a>
+              </li>
+
+              <li class="nav-item dropdown">
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
+    </div> <!-- Fim Container Menu -->     
+  </div> <!-- Fim Jumbotron Menu -->   
+  <!-- Fim Menu -->
+
+  
+  <div class="container p-5"> <!-- Container Conteúdo -->
+
+    <!-- Início Materias Cursando -->
+    <table class="table text-center" >
+      <thead>
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Materia</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="tr-hover">
+          <td scope="row">01</td>
+          <td>Matemática</td>
+          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
+        </tr>
+
+        <tr id="tr-hover">
+          <td scope="row" >02</td> <!-- *scope: para leitores de tela -->
+          <td>Ed. Física</td>
+          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
+        </tr>
+
+        <tr id="tr-hover">
+          <td scope="row">03</td>
+          <td>Português</td>
+          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
+        </tr>
+      </tbody>
+    </table> 
+    <!-- Fim Materias Cursando -->
+
+    <div class="jumbotron py-0 my-0 rounded-0 container container-fluid d-flex justify-content-center mt-5" style="background-color: rgb(16, 119, 137);">
+        <nav class="navbar" style="background-color: rgb(16, 119, 137);">
+              <span class="navbar-brand ml-5" id="color-white-h1"><h2>Disciplinas Ofertadas</h2></span>
+        </nav>
+    </div>
+
+    <!-- Início Disciplinas Ofertadas -->
+    <table class="table text-center mt-4" > 
+      <thead>
+        <tr>
+          <th scope="col">Materia</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="tr-hover">
+          <td>Ed. Financeira</td>          
+          <td><button type="button" class="btn btn-info btn-sm rounded-5" style="--bs-btn-font-size: 1rem;" id="btn-hover"onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-matriculese">Matricule-se</a></button></td>
+        </tr>
+        <tr id="tr-hover">
+          <td>Física</td>
+          <td><button type="button" class="btn btn-info btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover"onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-matriculese">Matricule-se</a></button></td>
+        </tr>
+      </tbody>
+    </table> 
+    <!-- Fim Disciplinas Ofertadas -->
+    
+    <footer class="fixed-bottom m-0 d-flex justify-content-center">2022 - Curitiba-PR</footer>
+
+  </div> <!-- Fim Container Conteúdo -->
+
+  <script src="../js/disciplinas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>
