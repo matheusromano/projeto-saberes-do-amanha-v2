@@ -46,3 +46,11 @@
 #link-matriculese:hover{
     text-decoration: underline;
 }
+
+#link-material {
+    color: black;
+    text-decoration: none;
+}
+#link-material:hover {
+    text-decoration: underline;
+}
