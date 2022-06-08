@@ -1,0 +1,48 @@
+#color-white{
+    color: white;
+}
+
+#color-white:hover{
+    color: black;
+}
+
+#jumbotron {
+    border:0rem
+}
+
+#color-white-h1{
+    color: white;
+}
+
+#tr-hover:hover {
+    background-color: rgb(182, 218, 219);
+}
+
+#btn-hover:hover {
+    background-color: yellow;
+    border-width: 2px;
+}
+
+.color-black {
+    color: black;
+}
+
+#xa:hover{
+    color: black;
+}
+
+#linkMatematica{
+    color: black;
+    text-decoration: none;
+}
+#linkMatematica:hover{
+    text-decoration: underline;
+}
+
+#link-matriculese{
+    color: black;
+    text-decoration: none;
+}
+#link-matriculese:hover{
+    text-decoration: underline;
+}
