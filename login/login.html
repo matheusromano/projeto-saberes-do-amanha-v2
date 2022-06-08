@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weslei Barbosa">
+  <link rel="icon" type="image/x-icon" href="../assets/saberes-do-amanhã-branco.png">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+  <link href="../css/signin.css" rel="stylesheet">
+
+
+  
+</head>
+
+<body class="text-center">
+
+  <main class="form-signin w-100 m-auto">
+    <form>
+      <a href="#" target="_blank">
+        <img class="mb-4" src="/assets/saberes-do-amanhã-branco.png" alt="" width="100 " height="100"></a>
+      <h1 class="h3 mb-3 text-white">Login</h1>
+
+      <div class="form-floating">
+
+        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+
+      </div>
+
+      <div class="form-floating">
+        <label for="floatingInput"></label>
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+      </div>
+      <!-- <div class="form-group">
+      <label class='formcolor'for="form form-text-white">Selecione o departamento</label>
+       <select class="form-control" id="form">
+        <option value="Soma">Área do Aluno</option>
+        <option>Área dos Pais</option>
+        <option>Secretaria</option>
+        <option>Financeiro</option>
+        <option>Área dos professores</option>
+      </select>
+    </div> -->
+    <div class="py-2 text-white link-light">
+      <a href="#" class="text-white" onclick="login()">Criar login?</a>
+
+    </div>
+      <div class="py-2 text-white link-light">
+        <a href="#" class="text-white" onclick="forget()">Esqueci minha senha</a>
+
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="entrar(this.form)">Entrar</button>
+      <script src="/js/login.js"></script>
+    </form>
+  </main>
+
+</body>
+
+</html>
