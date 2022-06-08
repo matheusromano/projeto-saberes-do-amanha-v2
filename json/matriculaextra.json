@@ -1,0 +1,20 @@
+[
+
+
+{
+    "nome":"Joaquina Alcantra",
+	"cpf":08915912307,
+	"rg":444204210,
+    "idade": 10,
+    "email":"joaquina@gmail.com",
+	"disciplina":["Português", "Matemática", "Educação Física"],
+    "statusextra":true,
+    "atividadeextra":["Educação Financeira"]
+	"login":"joaquina@gmail.com",
+	"senha":"aluno2",
+	"matricula":"002",
+	"listapresenca":true,
+	"turma":["Português", "Matemática", "Educação Física"],
+	"turno":["Matutino", "Vespertino"]
+
+]
