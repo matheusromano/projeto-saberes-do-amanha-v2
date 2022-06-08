@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" author="mbairo"content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" text="" type="text/css" href="../css/bootstrap.min.css"> <!-- <<< Retirar ?--> 
+
   <link rel="stylesheet" href="../css/style.css"><!-- Meu css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Link do bootstrap:  https://stackblitz.com/run?file=index.html -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Frequência e Boletins</title>
 </head>
 <body>
@@ -15,7 +15,6 @@
   <div class="jumbotron py-0 my-0 rounded-0" style="background-color: rgb(16, 119, 137);">
     <div class="container container-fluid d-flex justify-content-center">
       <nav class="navbar" style="background-color: rgb(16, 119, 137);">
-        <!-- <div class="container-fluid d-flex justify-content-center"> -->
             <a class="navbar-brand mr-5" href="#"><img height="110" src="../img/logo.png" alt="Logo"></a>
             <span class="navbar-brand ml-5" id="color-white-h1"><h1>Disciplinas</h1></span>           
         </div>
@@ -39,13 +38,9 @@
               <li class="nav-item">
                 <a class="nav-link active" id="color-white" href="agenda.html">Agenda</a>
               </li>
-              <!-- onclick=setAlgebraConteudo() -->
-              <li class="nav-item">
-                <a class="nav-link active" id="color-white" onclick="populateBody()" href="disciplinas.html">Disciplinas</a>
-              </li>
 
               <li class="nav-item">
-                <a class="nav-link active" id="color-white" href="financeiro.html">Financeiro</a>
+                <a class="nav-link active" id="color-white" href="disciplinas.html">Disciplinas</a>
               </li>
 
               <li class="nav-item">
@@ -84,20 +79,20 @@
       </thead>
       <tbody>
         <tr id="tr-hover">
-          <td scope="row" id="codMateria01">0001</td>
-          <td>Matemática</td>
-          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
+          <td scope="row" id="cod1">---</td>
+          <td id="materiaMatematica">---</td>
+          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="linkMatematica">Material</a></button></td>
         </tr>
 
         <tr id="tr-hover">
-          <td scope="row" id="codMateria02">0002</td>
-          <td>Português</td>
-          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
-        </tr>
-
-        <tr id="tr-hover">
-          <td scope="row" id="codMateria03">0003</td> <!-- *scope: para leitores de tela -->
+          <td scope="row" >02</td> <!-- *scope: para leitores de tela -->
           <td>Ed. Física</td>
+          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
+        </tr>
+
+        <tr id="tr-hover">
+          <td scope="row">03</td>
+          <td>Português</td>
           <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
         </tr>
       </tbody>
@@ -137,16 +132,6 @@
 
   <script src="../js/disciplinas.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>

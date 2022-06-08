@@ -1,16 +1,13 @@
-var header = document.querySelector('header');
-var section = document.querySelector('section');
-
-var requestURL = 'https://mbairo.github.io/page/alunosEResponsaveis.json';
+var requestURL = 'https://mbairo.github.io/page/alunos.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-    var dados = request.response;
+    var alunos = request.response;
 
-populateBody(dados);
+populateBody(alunos);
 }
 
 function populateBody(jsonObj){
@@ -28,10 +25,13 @@ function populateBody(jsonObj){
     document.getElementById("linkMatematica").value = jsonObj.linkMatematica
     document.getElementById("linkPortugues").value = jsonObj.linkPortugues
     document.getElementById("linkEdFisica").value = jsonObj.linkEdFisica
-    
-    document.getElementById("matriculeseFinanceira").value = jsonObj.matriculeseFinanceira
-    document.getElementById("matriculeseFisica").value = jsonObj.matriculeseFisica
+
 }
 
+
+    
+    // document.getElementById("matriculeseFinanceira").value = jsonObj.matriculeseFinanceira
+    // document.getElementById("matriculeseFisica").value = jsonObj.matriculeseFisica
+    // Criar um window.alert  ou um link?
 
 
