@@ -1,0 +1,52 @@
+[
+
+{
+    "nome":"Lucas Antonio",
+	"cpf":06915912307,
+	"rg":111204210,
+    "idade": 7,
+    "email":"joaquim@gmail.com",
+	"disciplina":["Português", "Matemática", "Educação Física"],
+    "statusextra":false,
+    "atividadeextra":[null]
+	"login":"joaquim@gmail.com",
+	"senha":"aluno1",
+	"matricula":"001",
+	"listapresenca":true,
+	"turma":["Português", "Matemática", "Educação Física"],
+	"notas":[80,60,100]
+},
+{
+    "nome":"Joaquina Alcantra",
+	"cpf":08915912307,
+	"rg":444204210,
+    "idade": 10,
+    "email":"joaquina@gmail.com",
+	"disciplina":["Português", "Matemática", "Educação Física"],
+    "statusextra":true,
+    "atividadeextra":["Educação Financeira"]
+	"login":"joaquina@gmail.com",
+	"senha":"aluno2",
+	"matricula":"002",
+	"listapresenca":true,
+	"turma":["Português", "Matemática", "Educação Física"],
+	"notas":[90,70,60]
+},
+
+{
+    "nome":"Carlos Augusto",
+	"cpf":07915912407,
+	"rg":432204220,
+    "idade": 9,
+    "email":"carlosaugusto@gmail.com",
+	"disciplina":["Português", "Matemática", "Educação Física"],
+    "statusextra":false,
+    "atividadeextra":[null]
+	"login":"carlosaugusto@gmail.com",
+	"senha":"aluno3",
+	"matricula":"003",
+	"listapresenca":true,
+	"turma":["Português", "Matemática", "Educação Física"],
+	"notas":[50,40,100]
+}
+]
