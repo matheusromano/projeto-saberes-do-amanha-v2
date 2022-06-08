@@ -1,0 +1,13 @@
+[
+{
+    "nome":"Carlos Eduardo da Fonseca",
+	"cpf":"06915912307",
+	"rg":"111204210",
+    "idade": 7,
+	"nomepai":"Luis Antonio da Fonseca",
+    "email":"luisantonio@gmail.com",
+    "datanscimento":"10/05/2022",
+	"anoletivo":["Maternal","Fundamental"],
+	"turno":["Matutino", "Vespertino"]
+}
+]
