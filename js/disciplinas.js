@@ -12,7 +12,7 @@ populateBody(alunos);
 
 function populateBody(jsonObj){
 
-    document.getElementById("codMateria01").value = jsonObj.codMateria01
+    document.getElementById("cod1").value = jsonObj.cod1
     document.getElementById("codMateria02").value = jsonObj.codMateria02
     document.getElementById("codMateria03").value = jsonObj.codMateria03
 
