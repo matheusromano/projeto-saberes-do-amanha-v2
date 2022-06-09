@@ -1,8 +1,7 @@
-[   
     {
-        "codMateria01": "01",
-        "codMateria02": "02",
-        "codMateria03": "03",
+        "codMateria01": 01,
+        "codMateria02": 02,
+        "codMateria03": 03,
         
         "matematica": "Matemática",
         "portugues": "Português",
@@ -17,4 +16,3 @@
         "matriculeseFinanceira": "",
         "link-matriculeseFisica": ""
     }
-]
