@@ -1,18 +1,3 @@
     {
-        "codMateria01": 1,
-        "codMateria02": 2,
-        "codMateria03": 3,
-        
-        "matematica": "Matemática",
-        "portugues": "Português",
-        "edFisica": "Ed. Física",
-        "edFinanceira": "Ed. Financeira",
-        "fisica": "Física",
-
-        "linkMatematica": "https://download.inep.gov.br/educacao_basica/encceja/material_estudo/livro_estudante/matematica_ens_fund.pdf",
-        "linkPortugues": "https://download.inep.gov.br/educacao_basica/encceja/material_estudo/livro_estudante/lingua_portuguesa.pdf",
-        "linkEdFisica": "http://portal.mec.gov.br/docman/dezembro-2010-pdf/7170-3-6-educacao-fisica-ensino-fundamental-walter-bracht/file",
-        
-        "matriculeseFinanceira": "",
-        "link-matriculeseFisica": ""
+        "cod1": 1
     }
