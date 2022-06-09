@@ -7,7 +7,7 @@ request.send();
 request.onload = function() {
     var alunos = request.response;
 
-populateBody(alunos);
+populateBody(alunos); 
 }
 
 function populateBody(jsonObj){
