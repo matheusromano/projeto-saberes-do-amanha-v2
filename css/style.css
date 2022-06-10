@@ -55,6 +55,13 @@
     text-decoration: underline;
 }
 
-#cod1{
-    color: red;
+/* Json */
+button {
+    background-color: rgb(252, 244, 93);
 }
+button:hover {
+    background-color: rgb(182, 218, 219);
+    /* background-color: rgb(16, 119, 137); */
+    text-decoration: underline;
+}
+

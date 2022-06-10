@@ -4,34 +4,84 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
+
 request.onload = function() {
-    var alunos = request.response;
+    var disciplinas = request.response;
+    console.log("Pra entender: ", disciplinas);
+    atualizaTabelas(disciplinas);
+} 
 
-populateBody(alunos); 
-}
+// Função para chamar outras Funções, no caso as Tabelas com somente a parte desejada do Json ("disciplinasCursando" ou  "disciplinasOfertadas")
+function atualizaTabelas(disciplinas){
+    atualizaTabelaCursando(disciplinas.disciplinasCursando);
+    atualizaTabelaOfertadas(disciplinas.disciplinasOfertadas);
+};
 
-function populateBody(jsonObj){
+function atualizaTabelaCursando(disciplinas) {
+    const COLUNA_CODIGO = 0;
+    const COLUNA_MATERIA = 1;
+    const COLUNA_LINK = 2;
+    const table = document.getElementById("tabelaCursosCursando");
 
-    document.getElementById("cod1").value = jsonObj.cod1
-    document.getElementById("codMateria02").value = jsonObj.codMateria02
-    document.getElementById("codMateria03").value = jsonObj.codMateria03
+    for (let indice = 0; indice < disciplinas.length; indice ++) {
+                                            
+        const disciplina = disciplinas[indice];
+        
+        // Linhas
+        const row = table.insertRow(indice +1);
 
-    document.getElementById("matematica").value = jsonObj.matematica
-    document.getElementById("portugues").value = jsonObj.portugues
-    document.getElementById("edFisica").value = jsonObj.edFisica
-    document.getElementById("edFinanceira").value = jsonObj.edFinanceira
-    document.getElementById("fisica").value = jsonObj.fisica
-
-    document.getElementById("linkMatematica").value = jsonObj.linkMatematica
-    document.getElementById("linkPortugues").value = jsonObj.linkPortugues
-    document.getElementById("linkEdFisica").value = jsonObj.linkEdFisica
-
-}
-
-
+        // Junção de linha com coluna = celula/cell
+        const celulaCodigo = row.insertCell(COLUNA_CODIGO);
+        const celulaMateria = row.insertCell(COLUNA_MATERIA);
+        const celulaLink = row.insertCell(COLUNA_LINK);
     
-    // document.getElementById("matriculeseFinanceira").value = jsonObj.matriculeseFinanceira
-    // document.getElementById("matriculeseFisica").value = jsonObj.matriculeseFisica
-    // Criar um window.alert  ou um link?
+        // Add o valor contido no json "Respectivos: codigo ou material ou link..."
+        celulaCodigo.innerHTML = disciplina.codigo;
+        celulaMateria.innerHTML = disciplina.materia; 
+        
+        // Cria botão e da o nome 
+        const btnMaterial = document.createElement('button');
+        btnMaterial.textContent = 'Material';
+        
+        // Ao clicar o abrir o link vindo do json "link"
+        btnMaterial.addEventListener("click", function(){
+          location = disciplina.link;
+        });
+        
+        // Add botão na página na posição do celulaLink (Linha + Coluna)
+        celulaLink.appendChild(btnMaterial);       
+    }
+}
 
+function atualizaTabelaOfertadas(disciplinas) {
+    const COLUNA_MATERIA = 0;
+    const COLUNA_LINK = 1;
+    const table = document.getElementById("tabelaCursosOfertados");
+                                          
+    for (let indice = 0; indice < disciplinas.length; indice ++) {
+                                            
+        const disciplina = disciplinas[indice];
+        
+        //linhas
+        const row = table.insertRow(indice +1);
 
+        // Junção de linha com coluna = celula/cell
+        const celulaMateria = row.insertCell(COLUNA_MATERIA);
+        const celulaLink = row.insertCell(COLUNA_LINK);
+
+        // Add o valor contido no json "Respectivos: material ou link..."
+        celulaMateria.innerHTML = disciplina.materia;
+    
+        // Cria botão e da o nome  
+        const btnMatriculese = document.createElement('button');
+        btnMatriculese.textContent = 'Matricule-se';
+        
+        // Ao clicar o abrir o link vindo do json "link"
+        btnMatriculese.addEventListener("click", function(){
+          window.alert("Parabéns pela iniciativa! Sua solicitação foi enviada para o corpo docente!");
+        });
+        
+        // Add botão na página na posição do celulaLink (Linha + Coluna)
+        celulaLink.appendChild(btnMatriculese);
+    }
+}

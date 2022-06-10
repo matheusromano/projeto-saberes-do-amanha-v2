@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
-
+ 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" author="mbairo"content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,7 +31,7 @@
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -64,12 +64,11 @@
     </div> <!-- Fim Container Menu -->     
   </div> <!-- Fim Jumbotron Menu -->   
   <!-- Fim Menu -->
-
   
   <div class="container p-5"> <!-- Container Conteúdo -->
 
     <!-- Início Materias Cursando --> 
-    <table class="table text-center" >
+    <table class="table text-center" id="tabelaCursosCursando">
       <thead>
         <tr>
           <th scope="col">Código</th>
@@ -77,25 +76,6 @@
           <th scope="col">Link</th>
         </tr>
       </thead>
-      <tbody>
-        <tr id="tr-hover">
-          <td scope="row">---</td>
-          <td id="materiaMatematica">---</td>
-          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="linkMatematica">Material</a></button></td>
-        </tr>
-
-        <tr id="tr-hover">
-          <td scope="row" >02</td> <!-- *scope: para leitores de tela -->
-          <td>Ed. Física</td>
-          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
-        </tr>
-
-        <tr id="tr-hover">
-          <td scope="row">03</td>
-          <td>Português</td>
-          <td><button type="button" class="btn btn-warning btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover" onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-material">Material</a></button></td>
-        </tr>
-      </tbody>
     </table> 
     <!-- Fim Materias Cursando -->
 
@@ -106,23 +86,13 @@
     </div>
 
     <!-- Início Disciplinas Ofertadas -->
-    <table class="table text-center mt-4" > 
+    <table class="table text-center mt-4" id="tabelaCursosOfertados" > 
       <thead>
         <tr>
           <th scope="col">Materia</th>
           <th scope="col">Link</th>
         </tr>
       </thead>
-      <tbody>
-        <tr id="tr-hover">
-          <td>Ed. Financeira</td>          
-          <td><button type="button" class="btn btn-info btn-sm rounded-5" style="--bs-btn-font-size: 1rem;" id="btn-hover"onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-matriculese">Matricule-se</a></button></td>
-        </tr>
-        <tr id="tr-hover">
-          <td>Física</td>
-          <td><button type="button" class="btn btn-info btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btn-hover"onclick=setAlgebraConteudo()><a target="_blank" href="" id="link-matriculese">Matricule-se</a></button></td>
-        </tr>
-      </tbody>
     </table> 
     <!-- Fim Disciplinas Ofertadas -->
     
