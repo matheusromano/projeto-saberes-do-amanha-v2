@@ -64,4 +64,43 @@ button:hover {
     /* background-color: rgb(16, 119, 137); */
     text-decoration: underline;
 }
+#blackk{
+    background-color: black;
+}
+
+
+.cardsContainer{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	grid-gap: 50px;
+}
+
+.cardsContainer .cardTitle{
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.cardsContainer .cardText{
+	padding: 0 20px 20px 20px;	
+	line-height: 22px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
