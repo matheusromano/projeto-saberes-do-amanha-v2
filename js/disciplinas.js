@@ -35,13 +35,14 @@ function atualizaTabelaCursando(disciplinas) {
         const celulaMateria = row.insertCell(COLUNA_MATERIA);
         const celulaLink = row.insertCell(COLUNA_LINK);
     
-        // Add o valor contido no json "Respectivos: codigo ou material ou link..."
+        // Add o valor contido no json "Respectivos: codigo e material"
         celulaCodigo.innerHTML = disciplina.codigo;
         celulaMateria.innerHTML = disciplina.materia; 
         
         // Cria botão e da o nome 
         const btnMaterial = document.createElement('button');
         btnMaterial.textContent = 'Material';
+        btnMaterial.id = "backGroundYellow";
         
         // Ao clicar o abrir o link vindo do json "link"
         btnMaterial.addEventListener("click", function(){
@@ -75,6 +76,7 @@ function atualizaTabelaOfertadas(disciplinas) {
         // Cria botão e da o nome  
         const btnMatriculese = document.createElement('button');
         btnMatriculese.textContent = 'Matricule-se';
+        btnMatriculese.id = "backGroundYellow";
         
         // Ao clicar o abrir o link vindo do json "link"
         btnMatriculese.addEventListener("click", function(){

@@ -1,22 +1,16 @@
 var requestURL = 'https://mbairo.github.io/page/boletins.json';
 var request = new XMLHttpRequest();
-
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-
 request.onload = function() {
+
     var boletim = request.response;
     console.log("Pra entender: ", boletim);
 //     atualizaTabela(boletim);
     atualizaTabelaBoletim(boletim)
     console.log("Boletim: ", boletim);
 } 
-
-// Função para chamar outras Funções, no caso as Tabelas com somente a parte desejada do Json ("boletimCursando" ou  "boletimOfertadas")
-// function atualizaTabela(boletim){
-//     atualizaTabelaBoletim(boletim);
-// };
 
 function atualizaTabelaBoletim(boletim) {
     const COLUNA_MATERIA = 0;
