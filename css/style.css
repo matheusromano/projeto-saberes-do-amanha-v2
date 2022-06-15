@@ -6,10 +6,6 @@
     color: black;
 }
 
-#jumbotron {
-    border:0rem
-}
-
 #color-white-h1{
     color: white;
 }
@@ -18,67 +14,31 @@
     background-color: rgb(182, 218, 219);
 }
 
-#btn-hover:hover {
+#bgBtnMaterial {
+    background-color: rgb(93, 220, 252);
+    border-radius: 50px;
+    border: none;
+    height: 30px;
+    width: 100px;
+}
+#bgBtnMaterial:hover {
     background-color: yellow;
-    border-width: 2px;
-}
-
-.color-black {
-    color: black;
-}
-
-#xa:hover{
-    color: black;
-}
-
-#linkMatematica{
-    color: black;
-    text-decoration: none;
-}
-#linkMatematica:hover{
     text-decoration: underline;
+    border: solid 2px black;
 }
 
-#link-matriculese{
-    color: black;
-    text-decoration: none;
+#bgBtnMatriculese {
+    background-color: rgb(255, 111, 0);
+    border-radius: 50px;
+    border: none;
+    height: 30px;
+    width: 120px;
 }
-#link-matriculese:hover{
+#bgBtnMatriculese:hover {
+    background-color: yellow;
     text-decoration: underline;
+    border: solid 2px;
 }
-
-#link-material {
-    color: black;
-    text-decoration: none;
-}
-#link-material:hover {
-    text-decoration: underline;
-}
-
-/* Json 
-button {
-    background-color: rgb(252, 244, 93);
-}
-button:hover {
-    background-color: rgb(182, 218, 219);
-    text-decoration: underline;
-}
-*/
-#backGroundYellow {
-    background-color: rgb(252, 244, 93);
-}
-#backGroundYellow:hover {
-    background-color: rgb(182, 218, 219);
-    text-decoration: underline;
-}
-
-
-
-
-#blackk{
-    background-color: black;
-}
-
 
 .cardsContainer{
 	display: grid;
@@ -99,6 +59,86 @@ button:hover {
     font-size: 20px;
 }
 
+#reprovado{
+    color: red;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#btnPagar{
+    text-decoration: none;
+}
+#btnPagar:hover {
+    background-color: yellow;
+    border-width: 2px;
+    text-decoration: underline;
+}
+
+#color-black {
+    color: black;
+}
+
+#linkPagar {
+    color: black;
+    text-decoration: none;
+} 
+#linkPagar:hover {
+    text-decoration: underline;
+}
+
+/*  
+
+#jumbotron {
+    border:0rem
+}
+
+
+
+
+
+
+
+#xa:hover{
+    color: black;
+}
+
+*/
+
+
+/*  
+#link-matriculese{
+    color: black;
+    text-decoration: none;
+}
+#link-matriculese:hover{
+    text-decoration: underline;
+}
+
+#link-material {
+    color: black;
+    text-decoration: none;
+} 
+#link-material:hover {
+    text-decoration: underline;
+}
+*/
+
+
+/* Json 
+button {
+    background-color: rgb(252, 244, 93);
+}
+button:hover {
+    background-color: rgb(182, 218, 219);
+    text-decoration: underline;
+}
+
+#blackk{
+    background-color: black;
+}
+
+
+*/
+ 
 
 
 

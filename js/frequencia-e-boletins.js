@@ -20,23 +20,47 @@ function atualizaTabelaBoletim(boletim) {
     const table = document.getElementById("tabelaBoletim");
 
     for (let indice = 0; indice < boletim.length; indice ++) {
-                                            
-        const disciplina = boletim[indice];
-        console.log("Disciplina: ", disciplina);
-        
-        // Linhas
-        const row = table.insertRow(indice +1);
+        if (indice == 2) {
+            const disciplina = boletim[indice];
+            console.log("Disciplina: ", disciplina);
+            
+            // Linhas 
+            const row = table.insertRow(indice +1);
+            // Add #id do css nas linhas 
+            row.id = "tr-hover";
 
-        // Junção de linha com coluna = celula/cell
-        const celulaMateria = row.insertCell(COLUNA_MATERIA);
-        const celulaNotas = row.insertCell(COLUNA_NOTAS);
-        const celulaFaltas = row.insertCell(COLUNA_FALTAS)
-        const celulaResultado = row.insertCell(COLUNA_RESULTADO);;
-    
-        // Add o valor contido no json "Respectivos: materia ou notas ou faltas ou resultado..."
-        celulaMateria.innerHTML = disciplina.materia; 
-        celulaNotas.innerHTML = disciplina.nota;
-        celulaFaltas.innerHTML = disciplina.faltas;
-        celulaResultado.innerHTML = disciplina.resultado;
+            // Junção de linha com coluna = celula/cell
+            const celulaMateria = row.insertCell(COLUNA_MATERIA);
+            const celulaNotas = row.insertCell(COLUNA_NOTAS);
+            const celulaFaltas = row.insertCell(COLUNA_FALTAS)
+            const celulaResultado = row.insertCell(COLUNA_RESULTADO);
+            celulaResultado.id = "reprovado"
+        
+            // Add o valor contido no json "Respectivos: materia ou notas ou faltas ou resultado..."
+            celulaMateria.innerHTML = disciplina.materia; 
+            celulaNotas.innerHTML = disciplina.nota;
+            celulaFaltas.innerHTML = disciplina.faltas;
+            celulaResultado.innerHTML = disciplina.resultado;            
+        } else {
+            const disciplina = boletim[indice];
+            console.log("Disciplina: ", disciplina);
+            
+            // Linhas 
+            const row = table.insertRow(indice +1);
+            // Add #id do css nas linhas 
+            row.id = "tr-hover";
+
+            // Junção de linha com coluna = celula/cell
+            const celulaMateria = row.insertCell(COLUNA_MATERIA);
+            const celulaNotas = row.insertCell(COLUNA_NOTAS);
+            const celulaFaltas = row.insertCell(COLUNA_FALTAS)
+            const celulaResultado = row.insertCell(COLUNA_RESULTADO);
+        
+            // Add o valor contido no json "Respectivos: materia ou notas ou faltas ou resultado..."
+            celulaMateria.innerHTML = disciplina.materia; 
+            celulaNotas.innerHTML = disciplina.nota;
+            celulaFaltas.innerHTML = disciplina.faltas;
+            celulaResultado.innerHTML = disciplina.resultado;
+        }
     }
 }

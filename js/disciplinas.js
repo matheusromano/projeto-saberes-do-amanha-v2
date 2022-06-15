@@ -29,6 +29,8 @@ function atualizaTabelaCursando(disciplinas) {
         
         // Linhas
         const row = table.insertRow(indice +1);
+        // Add #id do css nas linhas
+        row.id = "tr-hover";
 
         // Junção de linha com coluna = celula/cell
         const celulaCodigo = row.insertCell(COLUNA_CODIGO);
@@ -42,7 +44,8 @@ function atualizaTabelaCursando(disciplinas) {
         // Cria botão e da o nome 
         const btnMaterial = document.createElement('button');
         btnMaterial.textContent = 'Material';
-        btnMaterial.id = "backGroundYellow";
+        btnMaterial.id = "bgBtnMaterial";
+        
         
         // Ao clicar o abrir o link vindo do json "link"
         btnMaterial.addEventListener("click", function(){
@@ -65,6 +68,8 @@ function atualizaTabelaOfertadas(disciplinas) {
         
         //linhas
         const row = table.insertRow(indice +1);
+        // Add #id do css nas linhas
+        row.id = "tr-hover";
 
         // Junção de linha com coluna = celula/cell
         const celulaMateria = row.insertCell(COLUNA_MATERIA);
@@ -76,8 +81,8 @@ function atualizaTabelaOfertadas(disciplinas) {
         // Cria botão e da o nome  
         const btnMatriculese = document.createElement('button');
         btnMatriculese.textContent = 'Matricule-se';
-        btnMatriculese.id = "backGroundYellow";
-        
+        btnMatriculese.id = "bgBtnMatriculese";
+    
         // Ao clicar o abrir o link vindo do json "link"
         btnMatriculese.addEventListener("click", function(){
           window.alert("Parabéns pela iniciativa! Sua solicitação foi enviada para o corpo docente!");

@@ -1,17 +1,17 @@
 let http = new XMLHttpRequest();
-http.open('get', '../json/comunicados.json', true);
+http.open('get', 'https://mbairo.github.io/page/comunicados.json', true);
 http.send();
 http.onload = function(){
 	if(this.readyState == 4 && this.status == 200){
 		// Função PARSE para converter as StringsJson em um array javascript.
 		let jsonComunicados = JSON.parse(this.responseText);
 		// Variavel vazia para armazenar os layouts/cards
-		let constroiCard = "";
+		let constroiCard = ""; 
         let indice = -1;
 		// Add cartão na construtora em cada loop. *E para os cartões 0 e 5 add cor vermelha de alerta
 		for(let item of jsonComunicados){ 
             indice = indice + 1;
-            if (indice == 0 || indice == 5) {
+            if (indice == 0 || indice == 4) {
                 constroiCard += `
                     <div>
                         <div  class="card" style="background-color: rgb(234, 64, 64);">
