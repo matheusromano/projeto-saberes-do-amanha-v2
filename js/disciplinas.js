@@ -1,4 +1,4 @@
-var requestURL = 'https://mbairo.github.io/page/alunos.json';
+var requestURL = 'https://mbairo.github.io/page/disciplinas.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -9,7 +9,7 @@ request.onload = function() {
     var disciplinas = request.response;
     console.log("Pra entender: ", disciplinas);
     atualizaTabelas(disciplinas);
-} 
+}  
 
 // Função para chamar outras Funções, no caso as Tabelas com somente a parte desejada do Json ("disciplinasCursando" ou  "disciplinasOfertadas")
 function atualizaTabelas(disciplinas){

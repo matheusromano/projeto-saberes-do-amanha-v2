@@ -13,11 +13,12 @@ http.onload = function(){
 		for(let item of jsonFinanceiro){ 
             indice = indice + 1;
             if (indice == 1) { 
-                constroiTable += `
+                constroiTable += ` 
                 <table>
-                    <th>Cód. Controle</th>
+                    <th>Cód. Controle</th> 
                     <th>Descrição</th> 
                     <th>Mês</th>
+                    <th>Valor</th>
                     <th>Status Pagamento</th>                         
                 </table>
                 `;                  
@@ -27,6 +28,7 @@ http.onload = function(){
                     <td>${item.codControle}</td>             
                     <td>${item.descricao}</td>
                     <td>${item.mes}</td>
+                    <td>${item.valor}</td>
                     <td><button class="btn btn-danger btn-sm rounded-5" style="--bs-btn-font-size: 1rem" id="btnPagar"><a target="_blank" href="https://www.infopedia.pt/dicionarios/lingua-portuguesa/caloteiro" id="linkPagar">${item.statusPagamento}</a></button></td>
                 </tr>                                                                                                              				
 			`; 
@@ -36,6 +38,7 @@ http.onload = function(){
                     <td>${item.codControle}</td>             
                     <td>${item.descricao}</td>
                     <td>${item.mes}</td>
+                    <td>${item.valor}</td>
                     <td><button class="btn btn-success btn-sm rounded-5">${item.statusPagamento}</button></td>
                 </tr>                                                                                                              				
 			`;
