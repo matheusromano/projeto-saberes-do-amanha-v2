@@ -85,71 +85,21 @@
     text-decoration: underline;
 }
 
-/*  
-
-#jumbotron {
-    border:0rem
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:1px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
 }
 
-
-
-
-
-
-
-#xa:hover{
-    color: black;
+.my-float{
+	margin-top:16px;	
 }
-
-*/
-
-
-/*  
-#link-matriculese{
-    color: black;
-    text-decoration: none;
-}
-#link-matriculese:hover{
-    text-decoration: underline;
-}
-
-#link-material {
-    color: black;
-    text-decoration: none;
-} 
-#link-material:hover {
-    text-decoration: underline;
-}
-*/
-
-
-/* Json 
-button {
-    background-color: rgb(252, 244, 93);
-}
-button:hover {
-    background-color: rgb(182, 218, 219);
-    text-decoration: underline;
-}
-
-#blackk{
-    background-color: black;
-}
-
-
-*/
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

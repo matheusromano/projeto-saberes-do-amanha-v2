@@ -71,22 +71,23 @@
 
   
   <div class="container p-5"> <!-- Container Conteúdo -->
+    <div class="text-center container bg-success mt-1 ">
+      <h1 class="text-center text-white">Mensagens</h1>
+      <a class='text-center text-white' href="javascript:novaJanela('https://hangouts.google.com/')">Clique aqui para
+        abrir</a>
+      <script>
+        function novaJanela(URL) {
+          window.open(URL, "janela1", "width=800, height=600, directories=no, location=no, menubar=no,scrollbars=no, status=no, toolbar=no, resizable=no")
+        }
+      </script>
+  </div>
 
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Nome</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui seu nome">
+    <!-- Footer e whatsapp -->
+    <div class="container  m-0 d-flex justify-content-center">
+      <footer >2022 - Curitiba-PR</footer>
+      <a href="https://api.whatsapp.com/send/?phone=5511997419816&text&app_absent=0" class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
     </div>
-    <div class="mb-3 w-25">
-      <label for="exampleFormControlInput1" class="form-label">Matrícula</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui sua matrícula">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite aqui sua mensagem" rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary" onclick="enviarMsg()">Enviar</button>
 
-    <footer class="fixed-bottom m-0 d-flex justify-content-center">2022 - Curitiba-PR</footer>
   </div> <!-- Fim Container Conteúdo -->
 
   <script src="../js/fale-conosco.js"></script>
