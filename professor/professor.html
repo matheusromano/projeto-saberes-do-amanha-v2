@@ -97,9 +97,6 @@
           </h2>
         </div>
         <div class="col-md 5">
-          <div id="toolbar">
-            <button id="button" class="btn btn-secondary">Inserir Prova</button>
-          </div>
           <div class="input-group">
             <input type="search" id="agendaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
               aria-label="Search" aria-describedby="search-addon" />
@@ -266,9 +263,24 @@
               </tr>
             </thead>
           </table>
-      </div>
-      <div class="space" style="height: 16em;"></div>
+        </div>
+        <div class="space" style="height: 16em;"></div>
 
+      </div>
+
+      <div class="row mt-5" style=background-color:#176A85 ;">
+        <h1 class="text-center text-white">Mensagens</h1>
+      </div>
+      <div class="space" style="height: 5em;"></div>
+      <div class="text-center container bg-success mt-1 ">
+        <h1 class="text-center text-white">Confira as mensagens</h1>
+        <a class='text-center text-white' href="javascript:novaJanela('https://hangouts.google.com/')">Clique aqui para
+          abrir</a>
+        <script>
+          function novaJanela(URL) {
+            window.open(URL, "janela1", "width=800, height=600, directories=no, location=no, menubar=no,scrollbars=no, status=no, toolbar=no, resizable=no")
+          }
+        </script>
       </div>
 
       <div class="row mt-5" style=background-color:#176A85 ;">
@@ -298,13 +310,17 @@
               </tr>
             </thead>
           </table>
-      </div>
-      <div class="space" style="height: 16em;"></div>
+        </div>
+        <div class="space" style="height: 16em;"></div>
 
       </div>
 
     </div>
+    <div class="container  m-0 d-flex justify-content-center">
+      <footer>2022 - Curitiba-PR</footer>
+    </div>
   </main>
+
   <!-- Custom JS -->
   <script src="../js/professores.js"></script>
   <!-- Jquery import -->
