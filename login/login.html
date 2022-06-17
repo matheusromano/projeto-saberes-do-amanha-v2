@@ -4,18 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Weslei Barbosa">
+  <meta name="description" Author="Weslei Barbosa">
   <link rel="icon" type="image/x-icon" href="../assets/saberes-do-amanhã-branco.png">
-  <title>Login</title>
+  
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="../css/costumizacao-login.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/whatsapp_wlb.css" rel="stylesheet">
+  <title>Login</title>
 </head>
 <body class="text-center">
   <main class="form-signin w-100 m-auto">
     <form>
-      <a href="#" target="_blank">
-        <img class="mb-4" src="/assets/saberes-do-amanhã-branco.png" alt="" width="100 " height="100"></a>
+      <a href="../home/index.html" target="_self">
+        <img class="mb-4" src="../assets/logo.png" alt="" width="100 " height="100"></a>
       <h1 class="h3 mb-3 text-white">Login</h1>
 
       <div class="form-outline">
@@ -44,12 +48,16 @@
     </div>
       <div class="py-2 text-white link-light">
         <a href="#" class="text-white" onclick="forget()">Esqueci minha senha</a>
-
+        <footer class="fixed-bottom m-0 d-flex justify-content-center">2022 - Curitiba-PR</footer>
       </div>
 
       <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="entrar(this.form)">Entrar</button>
-      <script src="/js/login.js"></script>
+      <script src="../js/login.js"></script>
     </form>
+          <a href="https://api.whatsapp.com/send/?phone=5511997419816&text&app_absent=0" class="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+          </a>
+   </div>
   </main>
 
 </body>

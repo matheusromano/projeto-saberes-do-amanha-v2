@@ -1,106 +1,111 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@wesleiads 
-matheusromano
-/
-projeto-saberes-do-amanha-v2
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-projeto-saberes-do-amanha-v2/login/login.html
-@wesleiads
-wesleiads Add files via upload
-Latest commit 612c00c 1 hour ago
- History
- 2 contributors
-@wesleiads@matheusromano
-64 lines (46 sloc)  2.01 KB
-   
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Weslei Barbosa">
-  <link rel="icon" type="image/x-icon" href="../assets/saberes-do-amanhã-branco.png">
-  <title>Login</title>
+  <meta name="viewport" author="mbairo"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/style.css"><!-- Meu css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Frequência e Boletins</title>
+</head>
+<body>
+  <!-- Início Logo/Título -->
+  <div class="jumbotron py-0 my-0 rounded-0" style="background-color: rgb(16, 119, 137);">
+    <div class="container container-fluid d-flex justify-content-center">
+      <nav class="navbar" style="background-color: rgb(16, 119, 137);">
+        <!-- <div class="container-fluid d-flex justify-content-center"> -->
+            <a class="navbar-brand mr-5" href="#"><img height="110" src="../img/logo.png" alt="Logo"></a>
+            <span class="navbar-brand ml-5" href="" id="color-white-h1"><h1>Frequência e Boletins</h1></span>           
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Fim Logo/Título -->
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Início Menu -->
+  <div class="jumbotron py-0 my-0 rounded-0" style="background-color: rgb(47, 136, 151);"> <!-- Inicio Jumbotron Menu -->   
+    <div class="container container-fluid d-flex justify-content-center"> <!-- Inicio Container Menu -->
+      <nav class="navbar navbar-expand-lg" style="background-color: rgb(47, 136, 151);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="agenda.html">Agenda</a>
+              </li>
 
-  <link href="../css/signin.css" rel="stylesheet">
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="disciplinas.html">Disciplinas</a>
+              </li>
 
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" aria-current="page" href="frequencia-e-boletins.html">Frequência e Boletins</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="comunicados.html">Comunidados</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="fale-conosco.html">Fale Conosco</a>
+              </li>
+
+              <li class="nav-item dropdown">
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
+    </div> <!-- Fim Container Menu -->     
+  </div> <!-- Fim Jumbotron Menu -->   
+  <!-- Fim Menu -->
 
   
-</head>
+  <div class="container p-5"> <!-- Container Conteúdo -->
 
-<body class="text-center">
+    <!-- Início Boletin -->
+    <table class="table text-center" >
+      <thead>
+        <tr>
+          <th scope="col">Materias</th>
+          <th scope="col">Notas</th>
+          <th scope="col">Faltas</th>
+          <th scope="col">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="tr-hover">
+          <th scope="row">Matemática</th>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td> 
+        </tr>
+        <tr id="tr-hover">
+          <th scope="row">Ed. Física</th>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td> 
+        </tr>
+        <tr id="tr-hover">
+          <th scope="row">Português</th>
+          <td>---</td>
+           <td>---</td>
+            <td>---</td>  
+        </tr>
+      </tbody>
+    </table> 
+    <!-- Fim Boletin -->
+  
+    <footer class="fixed-bottom m-0 d-flex justify-content-center">2022 - Curitiba-PR</footer>
 
-  <main class="form-signin w-100 m-auto">
-    <form>
-      <a href="#" target="_blank">
-        <img class="mb-4" src="/assets/saberes-do-amanhã-branco.png" alt="" width="100 " height="100"></a>
-      <h1 class="h3 mb-3 text-white">Login</h1>
+  </div> <!-- Fim Container Conteúdo -->
 
-      <div class="form-floating">
-
-        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
-
-      </div>
-
-      <div class="form-floating">
-        <label for="floatingInput"></label>
-        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
-      </div>
-      <!-- <div class="form-group">
-      <label class='formcolor'for="form form-text-white">Selecione o departamento</label>
-       <select class="form-control" id="form">
-        <option value="Soma">Área do Aluno</option>
-        <option>Área dos Pais</option>
-        <option>Secretaria</option>
-        <option>Financeiro</option>
-        <option>Área dos professores</option>
-      </select>
-    </div> -->
-    <div class="py-2 text-white link-light">
-      <a href="#" class="text-white" onclick="login()">Criar login?</a>
-
-    </div>
-      <div class="py-2 text-white link-light">
-        <a href="#" class="text-white" onclick="forget()">Esqueci minha senha</a>
-
-      </div>
-
-      <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="entrar(this.form)">Entrar</button>
-      <script src="/js/login.js"></script>
-    </form>
-  </main>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 </body>
-
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
