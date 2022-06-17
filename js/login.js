@@ -1,6 +1,6 @@
 function entrar(form) {
 
-  if (form.email.value == "aluno@gmail.com" && form.senha.value == "a") {
+  if (form.email.value == "responsavel@gmail.com" && form.senha.value == "a") {
     window.open('https://matheusromano.github.io/projeto-saberes-do-amanha-v2/responsavel/agenda.html');
   }
   if (form.email.value == "professor@gmail.com" && form.senha.value == "a") {
