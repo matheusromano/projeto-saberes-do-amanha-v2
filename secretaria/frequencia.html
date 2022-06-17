@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="../assets/saberes-do-amanhã-branco.png">
+  <!-- Bootstrap CSS -->
+  <!-- Bootstrap import -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Frequência</title>
+</head>
+
+<body>
+  <!-- Início Logo/Título -->
+  <div class="jumbotron py-0 my-0 rounded-0" style="background-color: #176A85;">
+    <div class="container text-white  d-flex justify-content-center">
+      <nav class="navbar" style="background-color: #176A85;">
+        <a class="navbar-brand mr-5" href="../home/index.html" target="_self"><img height="110" src="../assets/logo.png"
+            alt="Logo"></a>
+        <span class="navbar-brand ml-5 text-white" id="color-white-h1">
+          <h1>Secretaria</h1>
+        </span>
+    </div>
+    </nav>
+  </div>
+  </div>
+  <!-- Fim Logo/Título -->
+
+  <!-- Início Menu -->
+  <div class="jumbotron text-white py-0 my-0 rounded-0" style="background-color: rgb(47, 136, 151);">
+    <!-- Inicio Jumbotron Menu -->
+    <div class="container container-fluid d-flex justify-content-center">
+      <!-- Inicio Container Menu -->
+      <nav class="navbar navbar-expand-lg" style="background-color: rgb(47, 136, 151);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active text-white" id="color-white" aria-current="page"
+                  href="matriculas.html">Matrículas</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active text-white" id="color-white" href="frequencia.html">Frequência e Boletins</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active text-white" id="color-white" href="mensagem.html">Mensagens</a>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div> <!-- Fim Container Menu -->
+  </div> <!-- Fim Jumbotron Menu -->
+
+  <div class="container conteudos">
+    <div class="row">
+      <div class="col-md-7">
+        <h2 class="text-black">
+          Consultar frequência e notas
+        </h2>
+      </div>
+      <div class="col-md  mt-2">
+        <div class="input-group">
+          <input type="search" id="frequenciaInput" class="form-control rounded"
+            placeholder="Digite o codigo da Matrícula" aria-label="Search" aria-describedby="search-addon" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <table id="frequenciaTable" class="table-striped border-success">
+        <thead>
+          <tr>
+            <th data-field="n_matricula">Número da Matricula</th>
+            <th data-field="nome">Nome</th>
+            <th data-field="materia">Materias</th>
+            <th data-field="faltas">Faltas</th>
+            <th data-field="1bim">1º bimestre</th>
+            <th data-field="2bim">2º bimestre</th>
+            <th data-field="3bim">3º bimestre</th>
+            <th data-field="4bim">4º bimestre</th>
+            <th data-field="total">Total</th>
+            <th data-field="resultado">Resultado</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    </main>
+    <!-- Custom JS -->
+    <script src="../js/professores.js"></script>
+    <!-- Jquery import -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
+    <!-- Bootstrap Table JS import -->
+    <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+    <!-- PopperJS import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="../js/dadosalunos.js"> </script>
+    <div class="container">
+      <button class="btn btn-success hidden-print" onclick="baixa_excelfreq()" style="float:right;">Exportar</button>
+    </div>
+    <div class="container">
+      <button class="justify-content-center btn btn-success hidden-print" onclick="pagePrint()">Imprimir</button>
+    </div>
+
+    <div class="container  m-0 d-flex justify-content-center">
+      <footer>2022 - Curitiba-PR</footer>
+    </div>
+
+</body>
+
+</html>
