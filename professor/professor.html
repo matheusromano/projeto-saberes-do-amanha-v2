@@ -19,7 +19,6 @@
   <!-- Bootstrap Table CSS import -->
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
 
-
   <title>Area do Professor</title>
 </head>
 
@@ -69,8 +68,7 @@
         <div class="col-md 5">
           <div class="input-group">
             <input type="search" id="turmaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
-              aria-label="Search" aria-describedby="search-addon" 
-              />
+              aria-label="Search" aria-describedby="search-addon" />
           </div>
         </div>
       </div>
@@ -104,8 +102,7 @@
           </div>
           <div class="input-group">
             <input type="search" id="agendaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
-              aria-label="Search" aria-describedby="search-addon" 
-              />
+              aria-label="Search" aria-describedby="search-addon" />
           </div>
         </div>
       </div>
@@ -125,12 +122,16 @@
         </table>
       </div>
       <div class="row mt-5">
-        <iframe src="https://calendar.google.com/calendar/embed?src=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHAwbG52bjZjdnIwZmlicXRnaXQwcDkwOXMgZHBlbms1c2ljdG40aHB1ODRjNjJjcmc1NmtAZw&amp;tmsrc=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com&ctz=America%2FSao_Paulo"
+          style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <a target="_blank"
+          href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHAwbG52bjZjdnIwZmlicXRnaXQwcDkwOXMgZHBlbms1c2ljdG40aHB1ODRjNjJjcmc1NmtAZw&amp;tmsrc=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com"><img
+            border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
       </div>
 
       <div class="row mt-5" style=background-color:#176A85 ;">
-        <h1 class="text-center text-white">Materiais</h1>
+        <h1 class="text-center text-white">Material</h1>
       </div>
       <div class="row mt-3">
         <div class="col-md-7">
@@ -140,9 +141,8 @@
         </div>
         <div class="col-md 5">
           <div class="input-group">
-            <input type="search" id="disciplinaInput" class="form-control rounded" placeholder="Digite o codigo da disciplina"
-              aria-label="Search" aria-describedby="search-addon" 
-              />
+            <input type="search" id="disciplinaInput" class="form-control rounded"
+              placeholder="Digite o codigo da disciplina" aria-label="Search" aria-describedby="search-addon" />
           </div>
         </div>
       </div>
@@ -167,9 +167,8 @@
         </div>
         <div class="col-md 5">
           <div class="input-group">
-            <input type="search" id="matriculaInput" class="form-control rounded" placeholder="Digite o codigo da matricula"
-              aria-label="Search" aria-describedby="search-addon" 
-              />
+            <input type="search" id="matriculaInput" class="form-control rounded"
+              placeholder="Digite o codigo da matricula" aria-label="Search" aria-describedby="search-addon" />
           </div>
         </div>
       </div>
@@ -187,12 +186,125 @@
           </thead>
         </table>
       </div>
+      <div class="row mt-5" style=background-color:#176A85 ;">
+        <h1 class="text-center text-white">Frequência e Boletins</h1>
+      </div>
+      <div class="row mt-5">
+        <h2 class="text-black ml-5"">Lista de Presença</h2>
+      </div>
+      <div class=" row">
+          <div class="col-md-7">
+            <h2 class="text-black">
+              Consultar turma:
+            </h2>
+          </div>
+          <div class="col-md 5">
+            <div class="input-group">
+              <input type="search" id="presencaInput" class="form-control rounded"
+                placeholder="Digite o codigo da turma" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <table id="presencaTable" class="table-striped border-success">
+          <thead>
+            <tr>
+              <th data-field="turma">Turma</th>
+              <th data-field="n_matricula">Numero da Matricula</th>
+              <th data-field="nome">Nome</th>
+              <th data-field="disciplina">Disciplina</th>
+              <th data-field="confirmacao_presenca">Confirmação de Presença</th>
+              <th data-field="docente">Docente</th>
+              <th data-field="data">Data</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="row mt-5">
+        <h2 class="text-black ml-5"">Notas</h2>
+      </div>
+      <div class=" row">
+          <table id="notasTable" class="table-striped border-success">
+            <thead>
+              <tr>
+                <th data-field="n_matricula">Numero da Matricula</th>
+                <th data-field="nome">Nome</th>
+                <th data-field="disciplina">Disciplina</th>
+                <th data-field="nota">Notas</th>
+                <th data-field="docente">Docente</th>
+                <th data-field="data">Data</th>
+              </tr>
+            </thead>
+          </table>
+      </div>
+      <div class="row mt-5" style=background-color:#176A85 ;">
+        <h1 class="text-center text-white">Relatorios</h1>
+      </div>
+      <div class="mt-5 row">
+        <div class="col-md-7">
+          <h2 class="text-black">
+            Consultar turma:
+          </h2>
+        </div>
+        <div class="col-md 5">
+          <div class="input-group">
+            <input type="search" id="relatorioInput" class="form-control rounded" placeholder="Digite o codigo da turma"
+              aria-label="Search" aria-describedby="search-addon" />
+          </div>
+        </div>
+        <div class=" row">
+          <table id="relatorioTable" class="table-striped border-success">
+            <thead>
+              <tr>
+                <th data-field="turma">Turma</th>
+                <th data-field="n_matricula">Numero da Matricula</th>
+                <th data-field="nome">Nome</th>
+                <th data-field="disciplina">Disciplina</th>
+                <th data-field="nota">Notas</th>
+                <th data-field="atividades">Atividades</th>
+                <th data-field="docente">Docente</th>
+              </tr>
+            </thead>
+          </table>
+      </div>
+      <div class="space" style="height: 16em;"></div>
+
+      </div>
+
+      <div class="row mt-5" style=background-color:#176A85 ;">
+        <h1 class="text-center text-white">Controle de Atividades</h1>
+      </div>
+      <div class="mt-5 row">
+        <div class="col-md-7">
+          <h2 class="text-black">
+            Consultar matricula:
+          </h2>
+        </div>
+        <div class="col-md 5">
+          <div class="input-group">
+            <input type="search" id="caInput" class="form-control rounded" placeholder="Digite o codigo da matricula"
+              aria-label="Search" aria-describedby="search-addon" />
+          </div>
+        </div>
+        <div class=" row">
+          <table id="caTable" class="table-striped border-success">
+            <thead>
+              <tr>
+                <th data-field="n_matricula">Numero da Matricula</th>
+                <th data-field="nome">Nome</th>
+                <th data-field="atividade_extra">Atividade Extra</th>
+                <th data-field="docente">Docente</th>
+                <th data-field="status">Status</th>
+              </tr>
+            </thead>
+          </table>
+      </div>
+      <div class="space" style="height: 16em;"></div>
+
+      </div>
+
     </div>
   </main>
-
-
-
-
   <!-- Custom JS -->
   <script src="../js/professores.js"></script>
   <!-- Jquery import -->
