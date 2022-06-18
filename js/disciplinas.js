@@ -1,13 +1,12 @@
 var requestURL = 'https://mbairo.github.io/page/disciplinas.json';
 var request = new XMLHttpRequest();
 
-request.open('GET', requestURL);
+request.open('GET', requestURL); 
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
     var disciplinas = request.response;
-    console.log("Pra entender: ", disciplinas);
     atualizaTabelas(disciplinas);
 }  
 
@@ -46,11 +45,11 @@ function atualizaTabelaCursando(disciplinas) {
         btnMaterial.textContent = 'Material';
         btnMaterial.id = "bgBtnMaterial";
         
-        
-        // Ao clicar o abrir o link vindo do json "link"
+        // Add o valor contido no json e ao clicar abre o link vindo do json "link"
         btnMaterial.addEventListener("click", function(){
-          location = disciplina.link;
-        });
+            link = disciplina.link;
+            window.open(link, '_blank');
+          });          
         
         // Add botão na página na posição do celulaLink (Linha + Coluna)
         celulaLink.appendChild(btnMaterial);       
@@ -70,7 +69,7 @@ function atualizaTabelaOfertadas(disciplinas) {
         const row = table.insertRow(indice +1);
         // Add #id do css nas linhas
         row.id = "tr-hover";
-
+ 
         // Junção de linha com coluna = celula/cell
         const celulaMateria = row.insertCell(COLUNA_MATERIA);
         const celulaLink = row.insertCell(COLUNA_LINK);
@@ -83,9 +82,10 @@ function atualizaTabelaOfertadas(disciplinas) {
         btnMatriculese.textContent = 'Matricule-se';
         btnMatriculese.id = "bgBtnMatriculese";
     
-        // Ao clicar o abrir o link vindo do json "link"
+        // Add o valor contido no json e ao clicar abre o link vindo do json "link"
         btnMatriculese.addEventListener("click", function(){
-          window.alert("Parabéns pela iniciativa! Sua solicitação foi enviada para o corpo docente!");
+            link = disciplina.link;
+            window.open(link, '_blank');
         });
         
         // Add botão na página na posição do celulaLink (Linha + Coluna)
