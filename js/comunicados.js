@@ -2,6 +2,7 @@ let http = new XMLHttpRequest();
 http.open('get', 'https://mbairo.github.io/page/comunicados.json', true);
 http.send();
 http.onload = function(){
+    // 4: pedido finalizado e resposta pronta // 200: "OK"
 	if(this.readyState == 4 && this.status == 200){
 		// Função PARSE para converter as StringsJson em um array javascript.
 		let jsonComunicados = JSON.parse(this.responseText);
@@ -18,7 +19,7 @@ http.onload = function(){
                             <img class="card-img-top" src="${item.foto}" alt="${item.cardTitle}">
                             <p class="cardTitle">${item.cardTitle}</p>
                             <p class="cardText">${item.cardText}</p>
-                            <a href="${item.linkSaibaMais}" class="linkSaibaMais btn btn-primary">Saiba mais...</a>
+                            <a href="${item.linkSaibaMais}" class="linkSaibaMais btn btn-primary" target="_blank">Saiba mais...</a>
                         </div>
                     </div>                     				
 			`;   
@@ -29,7 +30,7 @@ http.onload = function(){
                         <img class="card-img-top" src="${item.foto}" alt="${item.cardTitle}">
                         <p class="cardTitle">${item.cardTitle}</p>
                         <p class="cardText">${item.cardText}</p>
-                        <a href="${item.linkSaibaMais}" class="linkSaibaMais btn btn-primary">Saiba mais...</a>
+                        <a href="${item.linkSaibaMais}" class="linkSaibaMais btn btn-primary" target="_blank">Saiba mais...</a>
                     </div>   
                 </div>                  				
 			`;

@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap para o whatsapp-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Icon Navegador -->
+  <link rel="icon" type="image/x-icon" href="../assets/saberes-do-amanhã-branco.png">
   <title>Frequência e Boletins</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
     <div class="container container-fluid d-flex justify-content-center">
       <nav class="navbar" style="background-color: rgb(16, 119, 137);">
         <!-- <div class="container-fluid d-flex justify-content-center"> -->
-            <a class="navbar-brand mr-5" href="#"><img height="110" src="../assets/logo.png" alt="Logo"></a>
+            <a class="navbar-brand mr-5" href="../home/index.html"><img height="110" src="../assets/saberes-do-amanhã-branco.png" alt="Logo"></a>
             <span class="navbar-brand ml-5" id="color-white-h1"><h1>Frequência e Boletins</h1></span>           
         </div>
       </nav>
@@ -46,6 +48,10 @@
               </li>
 
               <li class="nav-item">
+                <a class="nav-link active" id="color-white" href="financeiro.html">Financeiro</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link active" id="color-white" aria-current="page" href="frequencia-e-boletins.html">Frequência e Boletins</a>
               </li>
 
@@ -67,10 +73,9 @@
   </div> <!-- Fim Jumbotron Menu -->   
   <!-- Fim Menu -->
 
-  
   <div class="container p-5"> <!-- Container Conteúdo -->
 
-    <!-- Início Boletin -->
+    <!-- Início Boletim -->
     <table class="table text-center" id="tabelaBoletim">
       <thead>
         <tr>
@@ -81,7 +86,7 @@
         </tr>
       </thead>
     </table> 
-    <!-- Fim Boletin -->
+    <!-- Fim Boletim -->
   
     <!-- Footer e whatsapp -->
     <div class="container  m-0 d-flex justify-content-center">
@@ -90,8 +95,9 @@
     </div>
 
   </div> <!-- Fim Container Conteúdo -->
+
   <script src="../js/frequencia-e-boletins.js"></script>
+  <!-- Necessário para rodar o Menu Hamburger -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
