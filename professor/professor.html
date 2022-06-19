@@ -42,17 +42,20 @@
         </ul>
         <ul class="nav nav-pills nav-fill">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Grade de
+            <a class="nav-link text-white" href="#gradeEnsino">Grade de
               Ensino</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Mensagens</a>
+            <a class="nav-link text-white" href="#mensagem">Mensagens</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Frequência e Boletins</a>
+            <a class="nav-link text-white" href="#frequenciaBoletim">Frequência e Boletins</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Relatórios</a>
+            <a class="nav-link text-white" href="#relatorios">Relatórios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#agenda">Agenda</a>
           </li>
         </ul>
       </div>
@@ -61,72 +64,79 @@
 
   <main>
     <div class="container conteudos">
-      <div class="row">
-        <div class="col-md-7">
-          <h2 class="text-black">
-            Consultar turma:
-          </h2>
+      <div id="gradeEnsino">
+        <div class="row" style=background-color:#176A85 ;>
+          <h1 class="text-center text-white">Grade de Ensino</h1>
         </div>
-        <div class="col-md 5">
-          <div class="input-group">
-            <input type="search" id="turmaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
-              aria-label="Search" aria-describedby="search-addon" />
+        <div class="row mt-3">
+          <div class="col-md-7">
+            <h2 class="text-black">
+              Consultar turma:
+            </h2>
+          </div>
+          <div class="col-md 5">
+            <div class="input-group">
+              <input type="search" id="turmaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
+                aria-label="Search" aria-describedby="search-addon" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <table id="turmaTable" class="table-striped border-success">
-          <thead>
-            <tr>
-              <th data-field="turma">Turma</th>
-              <th data-field="n_matricula">Número da Matricula</th>
-              <th data-field="nome">Nome</th>
-              <th data-field="disciplina">Disciplina</th>
-              <th data-field="atividade_extra">Atividade Extra</th>
-              <th data-field="docente">Docente</th>
-              <th data-field="status">Status</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="row mt-5" style=background-color:#176A85 ;>
-        <h1 class="text-center text-white">Agenda</h1>
-      </div>
-      <div class="row mt-3">
-        <div class="col-md-7">
-          <h2 class="text-black">
-            Consultar turma:
-          </h2>
+        <div class="row">
+          <table id="turmaTable" class="table-striped border-success">
+            <thead>
+              <tr>
+                <th data-field="turma">Turma</th>
+                <th data-field="n_matricula">Número da Matricula</th>
+                <th data-field="nome">Nome</th>
+                <th data-field="disciplina">Disciplina</th>
+                <th data-field="atividade_extra">Atividade Extra</th>
+                <th data-field="docente">Docente</th>
+                <th data-field="status">Status</th>
+              </tr>
+            </thead>
+          </table>
         </div>
-        <div class="col-md 5">
-          <div class="input-group">
-            <input type="search" id="agendaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
-              aria-label="Search" aria-describedby="search-addon" />
+      </div>
+      <div id="agenda">
+        <div class="row mt-5" style=background-color:#176A85 ;>
+          <h1 class="text-center text-white">Agenda</h1>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-7">
+            <h2 class="text-black">
+              Consultar turma:
+            </h2>
+          </div>
+          <div class="col-md 5">
+            <div class="input-group">
+              <input type="search" id="agendaInput" class="form-control rounded" placeholder="Digite o codigo da turma"
+                aria-label="Search" aria-describedby="search-addon" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <table id="agendaTable" class="table-striped border-success">
-          <thead>
-            <tr>
-              <th data-field="turma">Turma</th>
-              <th data-field="n_matricula">Número da Matricula</th>
-              <th data-field="nome">Nome</th>
-              <th data-field="disciplina">Disciplina</th>
-              <th data-field="prova">Prova</th>
-              <th data-field="docente">Docente</th>
-              <th data-field="data">Data</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="row mt-5">
-        <iframe
-          src="https://calendar.google.com/calendar/embed?src=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com&ctz=America%2FSao_Paulo"
-          style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        <a target="_blank"
-          href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHAwbG52bjZjdnIwZmlicXRnaXQwcDkwOXMgZHBlbms1c2ljdG40aHB1ODRjNjJjcmc1NmtAZw&amp;tmsrc=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com"><img
-            border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+        <div class="row">
+          <table id="agendaTable" class="table-striped border-success">
+            <thead>
+              <tr>
+                <th data-field="turma">Turma</th>
+                <th data-field="n_matricula">Número da Matricula</th>
+                <th data-field="nome">Nome</th>
+                <th data-field="disciplina">Disciplina</th>
+                <th data-field="prova">Prova</th>
+                <th data-field="docente">Docente</th>
+                <th data-field="data">Data</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="row mt-5">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com&ctz=America%2FSao_Paulo"
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          <a target="_blank"
+            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHAwbG52bjZjdnIwZmlicXRnaXQwcDkwOXMgZHBlbms1c2ljdG40aHB1ODRjNjJjcmc1NmtAZw&amp;tmsrc=dpenk5sictn4hpu84c62crg56k%40group.calendar.google.com"><img
+              border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+        </div>
       </div>
 
       <div class="row mt-5" style=background-color:#176A85 ;">
@@ -185,7 +195,7 @@
           </thead>
         </table>
       </div>
-      <div class="row mt-5" style=background-color:#176A85 ;">
+      <div class="row mt-5" id="frequenciaBoletim" style=background-color:#176A85 ;">
         <h1 class="text-center text-white">Frequência e Boletins</h1>
       </div>
       <div class="row mt-5">
@@ -236,7 +246,7 @@
             </thead>
           </table>
       </div>
-      <div class="row mt-5" style=background-color:#176A85 ;">
+      <div class="row mt-5" id="relatorios" style=background-color:#176A85 ;">
         <h1 class="text-center text-white">Relatorios</h1>
       </div>
       <div class="mt-5 row">
@@ -270,7 +280,7 @@
 
       </div>
 
-      <div class="row mt-5" style=background-color:#176A85 ;">
+      <div class="row mt-5" id="mensagem" style=background-color:#176A85 ;">
         <h1 class="text-center text-white">Mensagens</h1>
       </div>
       <div class="space" style="height: 5em;"></div>
